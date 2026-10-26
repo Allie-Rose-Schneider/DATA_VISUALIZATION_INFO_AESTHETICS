@@ -117,6 +117,16 @@ console.log('clean shows', shows)
     .attr('y', 42)
     .style('font-size', '11px')
     .attr('fill', '#555')
+
+
+  // add a source
+  svg
+  .append('text')
+  .attr('x', 12)
+  .attr('y', H - 10)
+  .style('font-size', '10px')
+  .attr('fill', '#555')
+  .text('Source: Netflix "What We Watched" report, Jan to Jun 2025. Genre and language data from TVMaze.')
  
   // ---- LEGEND (inside the SVG, in the top margin) ---------------------------------
     svg
